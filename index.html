@@ -55,7 +55,24 @@
           <p>El día 12 de septiembre fue dejado de tarea la página en formato html para que sea entregada el di 16 de septiembre y será echa los días 13, 14 y 15 de septiembre.</p>
         </div>
       </div>
-
+	<section>
+		 <h2 class="w3-wide">Diseño 3D</h2>
+		  <img class="mySlides2" src="img01.png" style="width:60%">
+		  <img class="mySlides2" src="img02.png" style="width:60%">		  
+		  <img class="mySlides2" src="img03.png" style="width:60%">
+		  <hr>
+		</section>
+		
+		<br>
+		<section>
+		 <h2 class="w3-wide">Bocetos</h2>
+		  <img class="mySlides3" src="img04.jpeg" style="width:60%">
+		  <img class="mySlides3" src="img05.jpeg" style="width:60%">		  
+		  <img class="mySlides3" src="img06.jpeg" style="width:60%">
+		  <img class="mySlides3" src="img07.jpeg" style="width:60%">
+		  <img class="mySlides3" src="img08.jpeg" style="width:60%">	
+		  <hr>
+		</section>
       <footer class="footer">
         <p>© S.M.J INC. <a href="home.html">Thunder Coaster</a>. Todos los derechos reservados. Santiago Uría Ramírez - A01273706</p>
       </footer>
@@ -65,5 +82,37 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	  <script>
+	// Automatic Slideshow - Cambia cada 3 segundos
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides2");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 3000);
+	}
+	
+	var myIndex2 = 0;
+	carousel2();
+
+	function carousel2() {
+		var i2;
+		var x2 = document.getElementsByClassName("mySlides3");
+		for (i2 = 0; i2 < x2.length; i2++) {
+			x2[i2].style.display = "none";
+		}
+		myIndex2++;
+		if (myIndex2 > x2.length) {myIndex2 = 1}
+		x2[myIndex2-1].style.display = "block";
+		setTimeout(carousel2, 3000);
+	}
+	</script>
   </body>
 </html>
